@@ -1,0 +1,107 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.todo:hover {
+  background-color: #c5c5c5;
+}
+
+.todoHeader {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 0.5fr 9fr 4fr;
+  gap: 0.5em;
+  margin-top: 0.7em;
+  margin-left: 1em;
+}
+.todoHeader input[type='checkbox'] {
+  width: 1em;
+  height: 1em;
+}
+.todoTitle {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  min-width: 0;
+}
+
+.todoDescription {
+  grid-column: 1 / -1;
+  margin: 0.5em 0 0.5em 2.75em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 65%;
+  word-break: break-word;
+}
+.todoSeverity {
+  text-align: center;
+  background-color: rgb(237, 239, 239);
+  width: 5em;
+  margin-top: 0.3em;
+}
+.todoDate {
+  font-size: 0.7em;
+  color: #978e8e;
+  position: relative;
+  transition: opacity 0.2s;
+}
+
+.deleteButton {
+  font-size: 1.5em;
+  background-color: red;
+  color: white;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  position: absolute;
+  top: -0.7em;
+  right: 0;
+  width: 100%;
+  height: 2.3em;
+}
+
+.todo:hover .deleteButton {
+  opacity: 1;
+}
+
+.todo.completed {
+  background-color: #c5c5c5;
+}
+
+.deleteIcon {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #313131;
+  font-size: 1em;
+  top: -0.5em;
+  right: 0.3em;
+}
+
+@media (max-width: 600px) {
+  .deleteButton {
+    display: none;
+  }
+
+  .todoDate {
+    padding-top: 0em;
+    padding-right: 2.5em;
+  }
+
+  .deleteIcon {
+    display: block;
+  }
+}

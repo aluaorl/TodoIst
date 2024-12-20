@@ -1,0 +1,21 @@
+.todoList {
+  flex-grow: 1;
+  max-height: 30em;
+  overflow-y: auto;
+  border: none;
+  padding-right: 1em;
+}
+.todoList::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+.todoList::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 0.7em;
+  height: 4em;
+}
+
+.todoList::-webkit-scrollbar-track {
+  background: #bfbfbf;
+  border-radius: 0.7em;
+}

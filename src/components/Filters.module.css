@@ -1,0 +1,44 @@
+.searchInput {
+  height: 2em;
+  width: 15em;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: 8.6em;
+  margin: 0;
+}
+
+.filterLabel {
+  display: flex;
+  background-color: rgb(237, 239, 239);
+  height: auto;
+  padding: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.filterLabel input[type='checkbox'],
+.severityLabel input[type='checkbox'] {
+  margin-right: 0.4em;
+  width: 1em;
+  height: 1em;
+}
+
+.severityContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.severity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  border: 1px solid #1d1c1c;
+}
+
+.severityLabel {
+  background-color: rgb(237, 239, 239);
+  padding: 0.3em 0.5em;
+}

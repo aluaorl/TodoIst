@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: Arial;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.todoApp {
+  margin-top: 5em;
+  width: 40em;
+  padding: 1.25em;
+  box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1);
+}
+
+.firstRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+h1 {
+  text-align: left;
+  font-size: 1.9em;
+}
+
+.content {
+  display: flex;
+  margin-top: 1.5em;
+  gap: 1.3em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: end;
+}
+
+button.generateTasks {
+  height: 3.5em;
+  width: 10em;
+  margin-top: 1em;
+  background-color: #edecec;
+  border: none;
+  border-radius: 0;
+}
+@media (max-width: 800px) {
+  .todoApp {
+    width: 100%;
+  }
+
+  button.addTodo {
+    width: 6.5em;
+  }
+}

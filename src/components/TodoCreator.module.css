@@ -1,0 +1,86 @@
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  color: red;
+  margin: 1em;
+}
+
+h2 {
+  font-size: 1em;
+  margin-top: 2em;
+}
+
+.nameRow,
+.descriptionRow {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.7em;
+  gap: 1em;
+}
+
+textarea {
+  flex: 1;
+}
+
+.title,
+.description {
+  padding: 0.5em 0.625em;
+  height: 2.25em;
+  border: 1px solid #ccc;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  min-width: 0;
+  resize: none;
+}
+
+.description {
+  height: 5em;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237, 239, 239);
+  height: 2.25em;
+  width: 7em;
+}
+
+.severitySelector {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.severityButtons {
+  display: flex;
+  gap: 1em;
+}
+
+.severityButton {
+  padding: 0.6em 1em;
+  border: none;
+  background-color: rgb(237, 239, 239);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.severityButton.active {
+  background-color: #000000;
+  color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: end;
+}
+
+button.addTodo {
+  height: 2em;
+  width: 10em;
+  background-color: #edecec;
+  border: none;
+  border-radius: 0;
+}
